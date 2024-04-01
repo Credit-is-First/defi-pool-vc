@@ -43,8 +43,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-* {
-  line-height: normal;
+.header {
+  background-color: var(--bg-color);
 }
 
 :root {
@@ -64,14 +64,20 @@ body {
   font-size: 20px;
 }
 
-h1,
+h1 {
+  font-size: 70px;
+  line-height: 83.54px;
+}
+
 h2 {
   font-size: 60px;
-  line-height: 103.8%;
+  line-height: 74.3px;
+  text-shadow: 0px 0px 10px #ffffff99;
 }
 
 h3 {
   font-size: 50px;
+  line-height: 61.92px;
 }
 
 h4 {
@@ -84,6 +90,9 @@ h5 {
 
 .big-text {
   font-size: 30px;
+  line-height: 35.8px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
 }
 
 .ul-text {
@@ -100,22 +109,29 @@ nav {
   font-size: 14px;
 }
 
+.primary {
+  color: var(--accent);
+}
+
 .text-secondary {
   color: #575757;
 }
 
-.primary-btn {
+.gradient-border {
   --b: 3px;
+  --position: relative;
   padding: calc(var(--b) * 2);
-  border-radius: 200px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
+  border-radius: inherit;
+  position: var(--position);
+  inset: 0;
+  z-index: 1;
 }
-.primary-btn:hover {
+
+.hover:hover {
   box-shadow: 0px 0px 10px 0px rgba(2, 164, 255, 0.5);
 }
-.primary-btn:before {
+
+.gradient-border:before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -138,4 +154,25 @@ nav {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.primary-ul > * {
+  display: flex;
+  align-items: center;
+}
+.primary-ul > *::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--accent);
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.medium-text {
+  font-family: SF Pro Display;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.51px;
+  text-align: left;
 }

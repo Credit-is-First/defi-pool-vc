@@ -1,14 +1,18 @@
 import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
+import GradientWrraper from '../GradientWrapper'
 
 type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
-function BaseButton({ onClick, ...others }: Props) {
+function BaseButton({ className, children, ...others }: Props) {
   return (
-    <div className='primary-btn' onClick={onClick}>
-      <div className='m-[-6px]'>
-        <div {...others}></div>
-      </div>
-    </div>
+    <GradientWrraper
+      className={
+        'cursor-pointer hover rounded-[200px] flex items-center justify-center ' + className
+      }
+      {...others}
+    >
+      <div className='gradient-text flex items-center justify-center'>{children}</div>
+    </GradientWrraper>
   )
 }
 

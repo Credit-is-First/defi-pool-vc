@@ -5,7 +5,7 @@ import { Outlet } from 'react-router'
 
 function Default() {
   return (
-    <div className='container m-auto'>
+    <div className='container m-auto max-w-[1241px]'>
       <Header />
       <div className='content' style={{ minHeight: 'calc(100vh - 103px - 289px)' }}>
         <Outlet />

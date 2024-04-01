@@ -5,7 +5,7 @@ import Logo from 'src/assets/images/logo.png'
 
 function Header() {
   return (
-    <div className='header py-[24px]'>
+    <div className='header py-[24px] sticky top-0 z-10'>
       <div className='flex items-center'>
         <div className='w-[55px] h-[55px]'>
           <img src={Logo} alt='logo' />
