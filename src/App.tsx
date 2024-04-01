@@ -1,9 +1,17 @@
 import React from 'react'
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+
+import Default from './layouts/Default'
+import HomePage from './pages/Home'
 
 function App() {
   return (
-    <h1 className='text-xl font-bold text-center mt-5'>Simple React Typescript Tailwind Sample</h1>
+    <Routes>
+      <Route path='/' element={<Default />}>
+        <Route path='/' element={<HomePage />} />
+      </Route>
+    </Routes>
   )
 }
 
