@@ -1,10 +1,6 @@
 import React from 'react'
 import Logo from 'src/assets/images/logo.png'
-import { ReactComponent as TelegramIcon } from 'src/assets/icons/telegram-icon.svg'
-import { ReactComponent as TwitterIcon } from 'src/assets/icons/twitter-icon.svg'
-import { ReactComponent as InstagramIcon } from 'src/assets/icons/instagram-icon.svg'
-import { ReactComponent as GithubIcon } from 'src/assets/icons/github-icon.svg'
-import { ReactComponent as DiscordIcon } from 'src/assets/icons/discord-icon.svg'
+import Socials from 'src/components/Socials'
 
 function Footer() {
   return (
@@ -14,13 +10,7 @@ function Footer() {
           <img src={Logo} alt='logo' />
         </div>
         <nav className='mt-[10px]'>DeFi pool LLC</nav>
-        <div className='flex mt-[20px]'>
-          <TelegramIcon className='mr-[10px]' />
-          <TwitterIcon className='mr-[10px]' />
-          <InstagramIcon className='mr-[10px]' />
-          <GithubIcon className='mr-[10px]' />
-          <DiscordIcon className='mr-[10px]' />
-        </div>
+        <Socials className='mt-[20px]' />
         <div>
           <nav className='mt-[20px]'>Prpopose a progect:</nav>
           <nav className='font-normal mt-[10px]'>support@defipool.com</nav>

@@ -64,6 +64,8 @@ code {
 
 body {
   font-size: 20px;
+  line-height: 23.87px;
+  font-weight: 400;
 }
 
 h1 {
@@ -90,6 +92,8 @@ h4 {
 
 h5 {
   font-size: 20px;
+  font-weight: 700;
+  line-height: 23.78px;
 }
 
 .big-text {
@@ -139,6 +143,10 @@ nav {
 
 .shadow {
   box-shadow: 0px 0px 10px 0px #0fcfff;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 4px #49beff33;
 }
 
 .hover:hover {
