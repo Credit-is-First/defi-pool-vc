@@ -51,6 +51,8 @@ code {
   --accent: #0fcfff;
   --bg-color: #111112;
   --text-color: #ffffff;
+  --disactive-color: #5a5a5a;
+  --danger-color: #bc0000;
   --gradient: linear-gradient(
     93.09deg,
     rgba(2, 164, 255, 0.3) 10.09%,
@@ -97,6 +99,7 @@ h5 {
 
 .ul-text {
   font-size: 24px;
+  font-weight: 700;
 }
 
 nav {
@@ -107,10 +110,15 @@ nav {
 
 .mini-text {
   font-size: 14px;
+  line-height: 16.71px;
+  font-weight: 400;
 }
 
 .primary {
   color: var(--accent);
+}
+.danger {
+  color: var(--danger-color);
 }
 
 .text-secondary {
@@ -125,6 +133,10 @@ nav {
   position: var(--position);
   inset: 0;
   z-index: 1;
+}
+
+.shadow {
+  box-shadow: 0px 0px 10px 0px #0fcfff;
 }
 
 .hover:hover {
@@ -175,4 +187,47 @@ nav {
   font-weight: 500;
   line-height: 15.51px;
   text-align: left;
+}
+
+[type='radio'] {
+  --tw-shadow: 0 0 #0000;
+  border-radius: 10px;
+  appearance: none;
+  background-color: transparent;
+  background-origin: border-box;
+  color: var(--accent);
+  display: inline-block;
+  flex-shrink: 0;
+  height: 20px;
+  padding: 0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  -webkit-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  width: 20px;
+  box-shadow: 0px 0px 10px 0px #0fcfff;
+  cursor: pointer;
+}
+
+[type='radio']:checked {
+  background: var(--gradient);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 11px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  border-radius: 11px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color);
+  box-shadow: inset 0 0 4px #0fcfff;
+  border-radius: 11px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 6px #0fcfff;
 }
