@@ -7,6 +7,7 @@ import HomePage from './pages/Home'
 import AccountPage from './pages/Account'
 import TierPage from './pages/Tier'
 import ProjectsPage from './pages/Projects'
+import ProjectDetailPage from './pages/Projects/Detail'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/account' element={<AccountPage />} />
         <Route path='/tier' element={<TierPage />} />
         <Route path='/projects' element={<ProjectsPage />} />
+        <Route path='/project/:id' element={<ProjectDetailPage />} />
       </Route>
     </Routes>
   )

@@ -9,17 +9,17 @@ function ProjectsPage() {
     <>
       <h2>Projects</h2>
       <div className='grid grid-flow-col auto-cols-max gap-1 mt-[100px]'>
-        <BaseButton hideBorder className='h-[34px] w-[144px] projects-tab-item'>
+        <BaseButton hideBorder className='h-[34px] w-[144px] mini-text-inter'>
           ALL
         </BaseButton>
-        <BaseButton hideBorder className='h-[34px] w-[144px] projects-tab-item'>
+        <BaseButton hideBorder className='h-[34px] w-[144px] mini-text-inter'>
           Collection is open
         </BaseButton>
-        <BaseButton hideBorder className='h-[34px] w-[144px] projects-tab-item'>
+        <BaseButton hideBorder className='h-[34px] w-[144px] mini-text-inter'>
           Upcoming projects
         </BaseButton>
-        <BaseButton className='h-[34px] w-[144px] projects-tab-item'>Completed</BaseButton>
-        <BaseButton hideBorder className='h-[34px] w-[144px] projects-tab-item'>
+        <BaseButton className='h-[34px] w-[144px] mini-text-inter'>Completed</BaseButton>
+        <BaseButton hideBorder className='h-[34px] w-[144px] mini-text-inter'>
           voting
         </BaseButton>
       </div>
