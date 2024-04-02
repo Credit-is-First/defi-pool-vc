@@ -1,11 +1,21 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
+import React, { DetailedHTMLProps, HTMLAttributes, useCallback } from 'react'
+import { useNavigate } from 'react-router'
 import partexSrc from 'src/assets/images/patex.jpg'
 
 type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
 function ProjectsItem({ className }: Props) {
+  const navigate = useNavigate()
+
+  const gotoDetailPage = useCallback(() => {
+    navigate('/project/1234')
+  }, [])
+
   return (
-    <div className={`rounded-[30px] overflow-hidden p-[26px] bg-[#1c1c1e] ${className}`}>
+    <div
+      className={`rounded-[30px] overflow-hidden p-[26px] bg-[#1c1c1e] cursor-pointer hover ${className}`}
+      onClick={gotoDetailPage}
+    >
       <div>
         <img className='rounded-[25px] overflow-hidden' src={partexSrc} alt='patex image' />
       </div>

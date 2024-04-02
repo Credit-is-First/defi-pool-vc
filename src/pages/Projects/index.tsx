@@ -26,7 +26,7 @@ function ProjectsPage() {
 
       <ScrollView
         className='mt-[70px] h-[707px]'
-        contentClass='overflow-y-auto pr-[57px] mb-[17px]'
+        contentClass='overflow-y-auto pr-[57px] mb-[17px] py-1 px-1'
       >
         <div className='grid grid-cols-3 gap-[50px]'>
           <ProjectsItem className='col-span-1' />
