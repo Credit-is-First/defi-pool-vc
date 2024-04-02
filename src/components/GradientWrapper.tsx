@@ -1,17 +1,25 @@
 import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
 
-type Props = { borderWidth?: number } & DetailedHTMLProps<
+type Props = { borderWidth?: number; hideBorder?: boolean } & DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 >
 
-function GradientWrraper({ borderWidth = 3, className, children, ...others }: Props) {
+function GradientWrraper({
+  borderWidth = 3,
+  hideBorder = false,
+  className,
+  children,
+  ...others
+}: Props) {
   return (
     <div className={'relative ' + className} {...others}>
-      <div
-        className='gradient-border pointer-events-none'
-        style={{ position: 'absolute', '--b': borderWidth + 'px' } as React.CSSProperties}
-      />
+      {!hideBorder && (
+        <div
+          className='gradient-border pointer-events-none'
+          style={{ position: 'absolute', '--b': borderWidth + 'px' } as React.CSSProperties}
+        />
+      )}
       {children}
     </div>
   )

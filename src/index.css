@@ -169,6 +169,7 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .primary-ul > * {
   display: flex;
   align-items: center;

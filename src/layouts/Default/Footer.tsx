@@ -9,7 +9,7 @@ import { ReactComponent as DiscordIcon } from 'src/assets/icons/discord-icon.svg
 function Footer() {
   return (
     <div className='h-[289px] relative'>
-      <div className='absolute top-[27px] left-[100px]'>
+      <div className='absolute top-[27px] left-0'>
         <div className='w-[55px] h-[55px]'>
           <img src={Logo} alt='logo' />
         </div>
@@ -27,7 +27,7 @@ function Footer() {
         </div>
         <nav className='mt-[20px] text-secondary'>2023</nav>
       </div>
-      <div className='absolute top-[92px] right-[100px]'>
+      <div className='absolute top-[92px] right-0'>
         <nav>Legal documentation</nav>
         <nav className='font-medium mt-[30px] text-secondary'>Privacy Notice</nav>
         <nav className='font-medium mt-[10px] text-secondary'>Terms of Services</nav>

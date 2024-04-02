@@ -6,6 +6,7 @@ import Default from './layouts/Default'
 import HomePage from './pages/Home'
 import AccountPage from './pages/Account'
 import TierPage from './pages/Tier'
+import ProjectsPage from './pages/Projects'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/account' element={<AccountPage />} />
         <Route path='/tier' element={<TierPage />} />
+        <Route path='/projects' element={<ProjectsPage />} />
       </Route>
     </Routes>
   )
