@@ -6,7 +6,7 @@ import Logo from 'src/assets/images/logo.png'
 function Header() {
   return (
     <div className='header py-[24px] sticky top-0 z-10'>
-      <div className='flex items-center'>
+      <div className='container m-auto max-w-[1241px] flex items-center'>
         <div className='w-[55px] h-[55px]'>
           <img src={Logo} alt='logo' />
         </div>
@@ -26,7 +26,7 @@ function Header() {
           <Link to={'/'}>
             <nav className='px-1'>Documentation</nav>
           </Link>
-          <Link to={'/'}>
+          <Link to={'/account'}>
             <nav className='px-1'>Account</nav>
           </Link>
           <Link to={'/'}>
