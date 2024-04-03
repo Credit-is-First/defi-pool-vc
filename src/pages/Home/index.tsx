@@ -1,10 +1,10 @@
 import React from 'react'
 import LogoSrc from 'src/assets/images/logo.png'
 import GradientWrraper from 'src/components/GradientWrapper'
-import BaseButton from 'src/components/buttons/BaseButton'
 import InvestorChartSrc from 'src/assets/images/investor_chart.png'
 import BlogCarouselItem from '../../components/BlogCarouselItem'
 import BaseCarousel from 'src/components/BaseCarousel'
+import BaseLinkButton from 'src/components/buttons/BaseLinkButton'
 
 function HomePage() {
   return (
@@ -13,10 +13,12 @@ function HomePage() {
         <div className='max-w-[568px]'>
           <h2>Invest in the best global early-stage project</h2>
           <div className='flex mt-[78px]'>
-            <BaseButton className='h-[44px] px-0 w-[143px] text-[15px] mr-[30px]'>
+            <BaseLinkButton to='#signup' className='h-[44px] px-0 w-[143px] text-[15px] mr-[30px]'>
               SIGN UP
-            </BaseButton>
-            <BaseButton className='h-[44px] px-0 w-[143px] text-[15px]'>LOG IN</BaseButton>
+            </BaseLinkButton>
+            <BaseLinkButton to='#signin' className='h-[44px] px-0 w-[143px] text-[15px]'>
+              LOG IN
+            </BaseLinkButton>
           </div>
         </div>
         <img src={LogoSrc} alt='logo image' />
@@ -66,8 +68,12 @@ function HomePage() {
       </div>
 
       <div className='flex mt-[100px] justify-center'>
-        <BaseButton className='h-[44px] px-0 w-[143px] text-[15px] mr-[30px]'>SIGN UP</BaseButton>
-        <BaseButton className='h-[44px] px-0 w-[143px] text-[15px]'>LOG IN</BaseButton>
+        <BaseLinkButton to='#signup' className='h-[44px] px-0 w-[143px] text-[15px] mr-[30px]'>
+          SIGN UP
+        </BaseLinkButton>
+        <BaseLinkButton to='#signin' className='h-[44px] px-0 w-[143px] text-[15px]'>
+          LOG IN
+        </BaseLinkButton>
       </div>
 
       <h2 className='mt-[150px]'>Convenient functionality for investors</h2>
