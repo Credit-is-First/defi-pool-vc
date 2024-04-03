@@ -11,7 +11,7 @@ function Header() {
 
   const handleCloseDialog = useCallback(() => {
     navigate(pathname)
-  }, [])
+  }, [pathname])
 
   return (
     <div className='header py-[24px] sticky top-0 z-10'>
