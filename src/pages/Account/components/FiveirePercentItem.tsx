@@ -13,9 +13,9 @@ function FiveirePercentItem({ percent }: Props) {
         <div className='ul-text ml-[15px]'>5ire</div>
       </div>
       {percent >= 0 ? (
-        <div className='primary'>+{percent}%</div>
+        <div className='text-accent'>+{percent}%</div>
       ) : (
-        <div className='danger'>{percent}%</div>
+        <div className='text-danger'>{percent}%</div>
       )}
     </div>
   )
