@@ -1,6 +1,6 @@
 import React from 'react'
 import BaseDialog, { BaseDialogProps } from 'src/components/BaseDialog'
-import BaseInput from 'src/components/BaseInput'
+import BaseInput from 'src/components/inputs/BaseInput'
 import infoIconSrc from 'src/assets/icons/info-icon.svg'
 import BaseSlider from 'src/components/BaseSlider'
 import BaseButton from 'src/components/buttons/BaseButton'
