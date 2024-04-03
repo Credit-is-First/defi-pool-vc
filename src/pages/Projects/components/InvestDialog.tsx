@@ -10,12 +10,14 @@ type Props = BaseDialogProps
 function InvestDialog({ className, open = false, onClose, ...others }: Props) {
   return (
     <BaseDialog
-      className={`w-[1000px] h-[648px] ${className}`}
+      className={`w-[1000px] h-[648px] rounded-[50px] ${className}`}
       open={open}
       onClose={onClose}
       {...others}
     >
-      <h4>Specify the amount in USDT you want to invest in this project</h4>
+      <h4 className='ml-[17px] mr-[43px]'>
+        Specify the amount in USDT you want to invest in this project
+      </h4>
       <div className='rounded-[50px] bg-[#1c1c1e] p-11 flex justify-between mt-[15px]'>
         <div>
           <div className='custom-text-md text-[#5A5A5A]'>Enter the amount $</div>
