@@ -1,9 +1,10 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
+import React from 'react'
 import GradientWrraper from '../GradientWrapper'
+import { BaseProps } from 'src/types'
 
 type Props = {
   hideBorder?: boolean
-} & DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+} & BaseProps
 
 function BaseButton({ className, hideBorder, children, ...others }: Props) {
   return (

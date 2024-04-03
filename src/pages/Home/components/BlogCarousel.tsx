@@ -1,8 +1,9 @@
-import React, { DetailedHTMLProps, HTMLAttributes, useCallback, useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { ReactComponent as LeftArrow } from 'src/assets/icons/arrow-icon.svg'
 import Blog from './Blog'
+import { BaseProps } from 'src/types'
 
 const responsive = {
   desktop: {
@@ -30,9 +31,8 @@ const responsive = {
     partialVisibilityGutter: 15,
   },
 }
-type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
-function BlogCarousel({ className }: Props) {
+function BlogCarousel({ className }: BaseProps) {
   const [carousel, setCarousel] = useState<Carousel | null>(null)
 
   const next = useCallback(() => {

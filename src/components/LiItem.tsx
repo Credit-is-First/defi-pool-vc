@@ -1,9 +1,10 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
+import React from 'react'
+import { BaseProps } from 'src/types'
 
 type Props = {
   dotColor: string
   text: string
-} & DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+} & BaseProps
 
 function LiItem({ dotColor, text, className, ...others }: Props) {
   return (

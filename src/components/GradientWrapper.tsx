@@ -1,9 +1,7 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
+import React from 'react'
+import { BaseProps } from 'src/types'
 
-type Props = { borderWidth?: number; hideBorder?: boolean } & DetailedHTMLProps<
-  HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->
+type Props = { borderWidth?: number; hideBorder?: boolean } & BaseProps
 
 function GradientWrraper({
   borderWidth = 3,

@@ -1,13 +1,14 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
+import React from 'react'
 import { ReactComponent as TelegramIcon } from 'src/assets/icons/telegram-icon.svg'
 import { ReactComponent as TwitterIcon } from 'src/assets/icons/twitter-icon.svg'
 import { ReactComponent as InstagramIcon } from 'src/assets/icons/instagram-icon.svg'
 import { ReactComponent as GithubIcon } from 'src/assets/icons/github-icon.svg'
 import { ReactComponent as DiscordIcon } from 'src/assets/icons/discord-icon.svg'
+import { BaseProps } from 'src/types'
 
 type Props = {
   size?: number
-} & DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+} & BaseProps
 
 function Socials({ size = 30, className, ...others }: Props) {
   return (
