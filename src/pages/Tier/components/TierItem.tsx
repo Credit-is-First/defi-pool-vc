@@ -12,7 +12,7 @@ function TierItem({ name, allocation, poolSize }: Props) {
   return (
     <GradientWrraper
       borderWidth={1}
-      className='px-[12px] py-[30px] w-[280px] h-[321px] bg-[#1c1c1e] rounded-[11px] flex flex-col items-center justify-center'
+      className='px-[12px] py-[30px] w-[280px] h-[321px] bg-card rounded-[11px] flex flex-col items-center justify-center'
     >
       <h4>{name}</h4>
       <div className='mt-[44px]'>Allocation ${allocation}</div>

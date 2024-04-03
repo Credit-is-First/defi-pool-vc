@@ -12,7 +12,7 @@ function ProjectsItem({ className }: BaseProps) {
 
   return (
     <div
-      className={`rounded-[30px] overflow-hidden p-[26px] bg-[#1c1c1e] cursor-pointer hover ${className}`}
+      className={`rounded-[30px] overflow-hidden p-[26px] bg-card cursor-pointer hover ${className}`}
       onClick={gotoDetailPage}
     >
       <div>

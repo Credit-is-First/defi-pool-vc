@@ -13,7 +13,9 @@ module.exports = {
         desc: '#9e9e9e',
         disactive: '#5a5a5a',
         danger: '#bc0000',
-        bg: '#111112',
+        mainBg: '#111112',
+        listBg: '#202326',
+        card: '#1c1c1e',
       },
       fontSize: {
         '2xs': '12px',
@@ -35,7 +37,7 @@ module.exports = {
       addBase({
         html: { color: theme('colors.title'), lineHeight: 1.25 },
         body: {
-          backgroundColor: theme('colors.bg'),
+          backgroundColor: theme('colors.mainBg'),
           fontSize: theme('fontSize.xl'),
           fontWeight: theme('fontWeight.normal'),
           fontFamily: 'SF Pro Display',

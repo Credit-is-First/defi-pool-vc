@@ -37,28 +37,28 @@ function HomePage() {
       <div className='grid grid-cols-4 gap-[15px] mt-[100px]'>
         <GradientWrraper
           borderWidth={1}
-          className='bg-[#1c1c1e] flex items-center rounded-[30px] py-[33px]'
+          className='bg-card flex items-center rounded-[30px] py-[33px]'
         >
           <h1 className='text-accent ml-[33px] mr-[25px]'>1</h1>
           <div className='ul-text text-center mr-[33px]'>Register an account</div>
         </GradientWrraper>
         <GradientWrraper
           borderWidth={1}
-          className='bg-[#1c1c1e] flex items-center rounded-[30px] py-[33px]'
+          className='bg-card flex items-center rounded-[30px] py-[33px]'
         >
           <h1 className='text-accent ml-[33px] mr-[25px]'>2</h1>
           <div className='ul-text text-center w-[143px]'>Undergo KYC verification</div>
         </GradientWrraper>
         <GradientWrraper
           borderWidth={1}
-          className='bg-[#1c1c1e] flex items-center rounded-[30px] py-[33px]'
+          className='bg-card flex items-center rounded-[30px] py-[33px]'
         >
           <h1 className='text-accent ml-[33px] mr-[25px]'>3</h1>
           <div className='ul-text text-center w-[168px]'>Enter info an agreement with the fund</div>
         </GradientWrraper>
         <GradientWrraper
           borderWidth={1}
-          className='bg-[#1c1c1e] flex items-center rounded-[30px] py-[33px]'
+          className='bg-card flex items-center rounded-[30px] py-[33px]'
         >
           <h1 className='text-accent ml-[33px] mr-[25px]'>4</h1>
           <div className='ul-text text-center w-[194px]'>

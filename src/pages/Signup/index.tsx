@@ -8,7 +8,7 @@ function SignupDialog({ className, ...others }: BaseDialogProps) {
   return (
     <BaseDialog className={`w-[1000px] rounded-[50px] ${className}`} {...others}>
       <h4 className='mx-[17px]'>Create a new account</h4>
-      <div className='mt-[67px] rounded-[50px] bg-[#1C1C1E] py-[46px] pl-[54px]'>
+      <div className='mt-[67px] rounded-[50px] bg-card py-[46px] pl-[54px]'>
         <div className='grid grid-cols-2 gap-[30px] w-[630px]'>
           <BaseRoundedInput className='col-span-1 px-[30px] text-sm' placeholder='First name' />
           <BaseRoundedInput className='col-span-1 px-[30px] text-sm' placeholder='Last name' />

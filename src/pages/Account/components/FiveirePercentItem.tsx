@@ -7,7 +7,7 @@ type Props = {
 
 function FiveirePercentItem({ percent }: Props) {
   return (
-    <div className='hover flex items-center justify-between h-[90px] bg-[#202326] px-[23px] rounded-[20px]'>
+    <div className='hover flex items-center justify-between h-[90px] bg-listBg px-[23px] rounded-[20px]'>
       <div className='flex items-center'>
         <img src={fiveireIconSrc} width={47} alt='5ire icon' />
         <div className='ul-text ml-[15px]'>5ire</div>

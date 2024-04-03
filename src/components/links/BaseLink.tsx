@@ -10,7 +10,7 @@ function BaseLink({ to, className, underline, children, external, ...others }: P
         href={to}
         target='_blank'
         rel='noreferrer'
-        className={`hover:text-[var(--accent)] ${underline ? 'underline' : ''} ${className}`}
+        className={`hover:text-accent ${underline ? 'underline' : ''} ${className}`}
       >
         {children}
       </a>
@@ -20,7 +20,7 @@ function BaseLink({ to, className, underline, children, external, ...others }: P
   return (
     <Link
       to={to}
-      className={`hover:text-[var(--accent)] ${underline ? 'underline' : ''} ${className}`}
+      className={`hover:text-accent ${underline ? 'underline' : ''} ${className}`}
       {...others}
     >
       {children}
