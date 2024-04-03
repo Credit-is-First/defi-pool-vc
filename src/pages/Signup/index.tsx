@@ -39,7 +39,7 @@ function SignupDialog({ className, ...others }: BaseDialogProps) {
         <BaseButton className='w-[186px] h-[53px] mt-[40px] text-[16px] font-bold'>
           Create Account
         </BaseButton>
-        <div className='text-sm mt-[40px] text-[#5a5a5a] mb-[20px]'>
+        <div className='text-sm mt-[40px] text-disactive mb-[20px]'>
           By creating an account, I agree to the{' '}
           <BaseLink to={'https://coinlist.co/terms'} underline external>
             Terms of Service

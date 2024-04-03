@@ -4,6 +4,7 @@ import ConnectWalletBtn from './components/ConnectWalletBtn'
 import Logo from 'src/assets/images/logo.png'
 import SignupDialog from 'src/pages/Signup'
 import BaseLink from 'src/components/links/BaseLink'
+import SigninDialog from 'src/pages/Signin'
 
 function Header() {
   const { hash, pathname } = useLocation()
@@ -50,6 +51,7 @@ function Header() {
         </div>
       </div>
       <SignupDialog open={hash === '#signup'} onClose={handleCloseDialog} />
+      <SigninDialog open={hash === '#signin'} onClose={handleCloseDialog} />
     </div>
   )
 }

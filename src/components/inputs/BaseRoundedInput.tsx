@@ -16,7 +16,7 @@ const BaseRoundedInput: React.FC<BaseInputProps> = ({
   return (
     <GradientWrraper borderWidth={2} className={`rounded-[10px] ${className}`}>
       <input
-        className={`border-0 outline-0 bg-transparent placeholder-gray-500 px-2 py-1 ${inputClass}`}
+        className={`border-0 outline-0 bg-transparent placeholder-gray-500 px-2 py-1 w-full ${inputClass}`}
         style={{
           ...style,
           height,
