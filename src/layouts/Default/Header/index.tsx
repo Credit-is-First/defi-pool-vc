@@ -14,7 +14,7 @@ function Header() {
           <Link to={'/'}>
             <nav className='px-1'>Home</nav>
           </Link>
-          <Link to={'/blog'}>
+          <Link to={'/blog-article'}>
             <nav className='px-1'>Blog</nav>
           </Link>
           <Link to={'/projects'}>
