@@ -3,7 +3,7 @@ import LogoSrc from 'src/assets/images/logo.png'
 import GradientWrraper from 'src/components/GradientWrapper'
 import BaseButton from 'src/components/buttons/BaseButton'
 import InvestorChartSrc from 'src/assets/images/investor_chart.png'
-import BlogCarouselItem from './components/BlogCarouselItem'
+import BlogCarouselItem from '../../components/BlogCarouselItem'
 import BaseCarousel from 'src/components/BaseCarousel'
 
 function HomePage() {

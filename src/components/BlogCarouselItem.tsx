@@ -5,12 +5,12 @@ function BlogCarouselItem() {
   return (
     <GradientWrraper
       borderWidth={1}
-      className='px-[13px] pt-[28px] w-[284px] h-[273px] bg-[#1c1c1e] rounded-[11px] flex flex-col items-center justify-center'
+      className='px-[12px] py-[30px] w-[284px] h-[273px] bg-[#1c1c1e] rounded-[11px]'
     >
-      <nav className='primary'>
+      <nav className='mb-[45px]'>
         Introducing Vault – cryptobanking white label and API B2B solution powered by DeFi pool
       </nav>
-      <div className='text-[13px] leading-[15.51px] font-medium text-[#191919]'>
+      <div className='medium-text opacity-80'>
         Vault is part of the Choise.com group. Over the past six years, more than $60M has been
         invested in the infrastructure of Choise.com. Building on this robust infrastructure, Vault
         is now crafting the leading cryptobanking white label B2B2C product.
