@@ -1,10 +1,9 @@
-import React, { DetailedHTMLProps, HTMLAttributes, useCallback } from 'react'
+import React, { useCallback } from 'react'
 import { useNavigate } from 'react-router'
 import partexSrc from 'src/assets/images/patex.jpg'
+import { BaseProps } from 'src/types'
 
-type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
-
-function ProjectsItem({ className }: Props) {
+function ProjectsItem({ className }: BaseProps) {
   const navigate = useNavigate()
 
   const gotoDetailPage = useCallback(() => {

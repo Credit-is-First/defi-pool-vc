@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import patexLogoSrc from 'src/assets/icons/patex_log.png'
 import patexBannerSrc from 'src/assets/images/patex_baner.jpg'
@@ -8,9 +8,20 @@ import tokenomicsChartSrc from 'src/assets/images/tokenomics_chart.svg'
 import LiItem from 'src/components/LiItem'
 import Socials from 'src/components/Socials'
 import BaseButton from 'src/components/buttons/BaseButton'
+import InvestDialog from './components/InvestDialog'
 
 function ProjectDetailPage() {
   const { id } = useParams()
+
+  const [open, setOpen] = useState(true)
+
+  const openInvestDialog = useCallback(() => {
+    setOpen(true)
+  }, [])
+
+  const closeInvsetDialog = useCallback(() => {
+    setOpen(false)
+  }, [])
 
   useEffect(() => {}, [id])
 
@@ -181,10 +192,14 @@ function ProjectDetailPage() {
           <h4 className='text-shadow mt-[70px]'>Socials</h4>
           <Socials size={50} className='mt-[30px]' />
           <div className='mt-[77px] flex justify-center'>
-            <BaseButton className='w-[193px] h-[59px]'>Invest</BaseButton>
+            <BaseButton className='w-[193px] h-[59px]' onClick={openInvestDialog}>
+              Invest
+            </BaseButton>
           </div>
         </div>
       </div>
+
+      <InvestDialog open={open} onClose={closeInvsetDialog} />
     </>
   )
 }
