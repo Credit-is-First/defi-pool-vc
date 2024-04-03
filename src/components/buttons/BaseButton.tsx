@@ -2,11 +2,11 @@ import React from 'react'
 import GradientWrraper from '../GradientWrapper'
 import { BaseProps } from 'src/types'
 
-type Props = {
+export type BaseButtonProps = {
   hideBorder?: boolean
 } & BaseProps
 
-function BaseButton({ className, hideBorder, children, ...others }: Props) {
+function BaseButton({ className, hideBorder, children, ...others }: BaseButtonProps) {
   return (
     <GradientWrraper
       hideBorder={hideBorder}

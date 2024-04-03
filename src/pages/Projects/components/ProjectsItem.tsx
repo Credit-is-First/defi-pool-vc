@@ -18,7 +18,7 @@ function ProjectsItem({ className }: BaseProps) {
       <div>
         <img className='rounded-[25px] overflow-hidden' src={partexSrc} alt='patex image' />
       </div>
-      <div className='text-[12px] primary my-[26px] text-center'>
+      <div className='text-[12px] text-accent my-[26px] text-center'>
         <span className='uppercase gradient-text'>completed</span>
         <span className='uppercase gradient-text'> / profit 400%</span>
       </div>

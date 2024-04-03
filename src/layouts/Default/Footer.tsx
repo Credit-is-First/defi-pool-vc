@@ -15,13 +15,13 @@ function Footer() {
           <nav className='mt-[20px]'>Prpopose a progect:</nav>
           <nav className='font-normal mt-[10px]'>support@defipool.com</nav>
         </div>
-        <nav className='mt-[20px] text-secondary'>2023</nav>
+        <nav className='mt-[20px] text-subtitle'>2023</nav>
       </div>
       <div className='absolute top-[92px] right-0'>
         <nav>Legal documentation</nav>
-        <nav className='font-medium mt-[30px] text-secondary'>Privacy Notice</nav>
-        <nav className='font-medium mt-[10px] text-secondary'>Terms of Services</nav>
-        <nav className='font-medium mt-[10px] text-secondary'>Risks disklosure statement</nav>
+        <nav className='font-medium mt-[30px] text-subtitle'>Privacy Notice</nav>
+        <nav className='font-medium mt-[10px] text-subtitle'>Terms of Services</nav>
+        <nav className='font-medium mt-[10px] text-subtitle'>Risks disklosure statement</nav>
       </div>
     </div>
   )

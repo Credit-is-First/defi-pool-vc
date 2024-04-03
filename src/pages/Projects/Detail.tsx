@@ -13,7 +13,7 @@ import InvestDialog from './components/InvestDialog'
 function ProjectDetailPage() {
   const { id } = useParams()
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   const openInvestDialog = useCallback(() => {
     setOpen(true)
@@ -95,24 +95,24 @@ function ProjectDetailPage() {
             Patex is focused on nurturing robust communities that support its entire ecosystem and
             distributing them across all global regions.
           </div>
-          <h5 className='mt-[30px]'>
+          <h6 className='mt-[30px]'>
             The marketing cycle is currently split into 4 different phases:
-          </h5>
+          </h6>
           <div className='grid gap-[20px] mt-[30px]'>
             <div>
-              <h5 className='inline'>Phase 1 — User Acquisition.</h5> Patex focuses on attracting
+              <h6 className='inline'>Phase 1 — User Acquisition.</h6> Patex focuses on attracting
               new users to join the platform and become part of the vibrant community.
             </div>
             <div>
-              <h5 className='inline'>Phase 2 — User Retention.</h5> Once users are on board, Patex
+              <h6 className='inline'>Phase 2 — User Retention.</h6> Once users are on board, Patex
               starts building long-term relationships to foster loyalty.
             </div>
             <div>
-              <h5 className='inline'>Phase 3 — Token Launch.</h5> This would expand its reach, and
+              <h6 className='inline'>Phase 3 — Token Launch.</h6> This would expand its reach, and
               increase involvement for users.
             </div>
             <div>
-              <h5 className='inline'>Phase 4 — Expansion.</h5> With ongoing institutional
+              <h6 className='inline'>Phase 4 — Expansion.</h6> With ongoing institutional
               partnerships and collaborations with governmental entities, Patex aims to facilitate
               the integration of native digital currencies onto its network. This allows the project
               to accommodate billions of users and capture a significant market share.
@@ -148,20 +148,40 @@ function ProjectDetailPage() {
           <div className='flex items-center mt-[30px]'>
             <img width={222} height={224} src={tokenomicsChartSrc} alt='tokenomics chart' />
             <div className='grid gap-[5px] ml-[30px]'>
-              <LiItem className='mini-text-inter' dotColor='bg-[#ffffff]' text='18.75% Marketing' />
-              <LiItem className='mini-text-inter' dotColor='bg-[#B9E6FE]' text='15% Private Sale' />
-              <LiItem className='mini-text-inter' dotColor='bg-[#7CD4FD]' text='13.25% IDO' />
-              <LiItem className='mini-text-inter' dotColor='bg-[#36BFFA]' text='12.5% Liquidity' />
-              <LiItem className='mini-text-inter' dotColor='bg-[#0086C9]' text='10.5% Community' />
-              <LiItem className='mini-text-inter' dotColor='bg-[#1FA5FF]' text='7.5% Advisors' />
-              <LiItem className='mini-text-inter' dotColor='bg-[#026AA2]' text='7.5% Ecosystem' />
               <LiItem
-                className='mini-text-inter'
+                className='text-sm font-inter'
+                dotColor='bg-[#ffffff]'
+                text='18.75% Marketing'
+              />
+              <LiItem
+                className='text-sm font-inter'
+                dotColor='bg-[#B9E6FE]'
+                text='15% Private Sale'
+              />
+              <LiItem className='text-sm font-inter' dotColor='bg-[#7CD4FD]' text='13.25% IDO' />
+              <LiItem
+                className='text-sm font-inter'
+                dotColor='bg-[#36BFFA]'
+                text='12.5% Liquidity'
+              />
+              <LiItem
+                className='text-sm font-inter'
+                dotColor='bg-[#0086C9]'
+                text='10.5% Community'
+              />
+              <LiItem className='text-sm font-inter' dotColor='bg-[#1FA5FF]' text='7.5% Advisors' />
+              <LiItem
+                className='text-sm font-inter'
+                dotColor='bg-[#026AA2]'
+                text='7.5% Ecosystem'
+              />
+              <LiItem
+                className='text-sm font-inter'
                 dotColor='bg-[#065986]'
                 text="6.25% KOL's Round"
               />
-              <LiItem className='mini-text-inter' dotColor='bg-[#0B4A6F]' text='6.25% Team' />
-              <LiItem className='mini-text-inter' dotColor='bg-[#FFFFFF]' text='2.5% Promo' />
+              <LiItem className='text-sm font-inter' dotColor='bg-[#0B4A6F]' text='6.25% Team' />
+              <LiItem className='text-sm font-inter' dotColor='bg-[#FFFFFF]' text='2.5% Promo' />
             </div>
           </div>
           <h4 className='text-shadow mt-[70px]'>Investors</h4>

@@ -42,14 +42,14 @@ function AccountPage() {
             </label>
           </div>
         </div>
-        <div className='gradient-text big-text ml-[100px]'>+ 437%</div>
+        <h5 className='gradient-text ml-[100px]'>+ 437%</h5>
       </div>
 
       <img className='mt-[80px]' src={pnlChartSrc} alt='pnl chart' />
 
       <div className='flex justify-between items-center mt-[120px]'>
         <h3>5ire</h3>
-        <div className='gradient-text big-text'>+ 1000%</div>
+        <h5 className='gradient-text'>+ 1000%</h5>
       </div>
 
       <div className='mt-[80px] grid grid-cols-3 gap-[34px]'>
@@ -137,7 +137,7 @@ function AccountPage() {
         <div className='col-span-1 flex flex-col'>
           <GradientWrraper
             borderWidth={1}
-            className='rounded-[200px] mini-text px-[25px] flex items-center ml-1 mr-[41px] mb-[50px]'
+            className='rounded-[200px] text-sm px-[25px] flex items-center ml-1 mr-[41px] mb-[50px]'
           >
             <input
               type='text'

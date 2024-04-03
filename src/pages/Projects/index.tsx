@@ -1,6 +1,5 @@
 import React from 'react'
 import BaseButton from 'src/components/buttons/BaseButton'
-import './index.css'
 import ProjectsItem from './components/ProjectsItem'
 import ScrollView from 'src/components/ScrollView'
 
@@ -9,17 +8,19 @@ function ProjectsPage() {
     <>
       <h2>Projects</h2>
       <div className='grid grid-flow-col auto-cols-max gap-1 mt-[100px]'>
-        <BaseButton hideBorder className='h-[34px] w-[144px] mini-text-inter'>
+        <BaseButton hideBorder className='h-[34px] w-[144px] text-2xs font-inter font-medium'>
           ALL
         </BaseButton>
-        <BaseButton hideBorder className='h-[34px] w-[144px] mini-text-inter'>
+        <BaseButton hideBorder className='h-[34px] w-[144px] text-2xs font-inter font-medium'>
           Collection is open
         </BaseButton>
-        <BaseButton hideBorder className='h-[34px] w-[144px] mini-text-inter'>
+        <BaseButton hideBorder className='h-[34px] w-[144px] text-2xs font-inter font-medium'>
           Upcoming projects
         </BaseButton>
-        <BaseButton className='h-[34px] w-[144px] mini-text-inter'>Completed</BaseButton>
-        <BaseButton hideBorder className='h-[34px] w-[144px] mini-text-inter'>
+        <BaseButton className='h-[34px] w-[144px] text-2xs font-inter font-medium'>
+          Completed
+        </BaseButton>
+        <BaseButton hideBorder className='h-[34px] w-[144px] text-2xs font-inter font-medium'>
           voting
         </BaseButton>
       </div>
