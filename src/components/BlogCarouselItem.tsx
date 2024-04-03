@@ -1,7 +1,7 @@
 import React from 'react'
 import GradientWrraper from 'src/components/GradientWrapper'
 
-function Blog() {
+function BlogCarouselItem() {
   return (
     <GradientWrraper
       borderWidth={1}
@@ -19,4 +19,4 @@ function Blog() {
   )
 }
 
-export default Blog
+export default BlogCarouselItem

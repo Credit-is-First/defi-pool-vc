@@ -8,6 +8,7 @@ import AccountPage from './pages/Account'
 import TierPage from './pages/Tier'
 import ProjectsPage from './pages/Projects'
 import ProjectDetailPage from './pages/Projects/Detail'
+import BlogPage from './pages/Blog'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/tier' element={<TierPage />} />
         <Route path='/projects' element={<ProjectsPage />} />
         <Route path='/project/:id' element={<ProjectDetailPage />} />
+        <Route path='/blog-article' element={<BlogPage />} />
       </Route>
     </Routes>
   )
