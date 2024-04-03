@@ -1,11 +1,11 @@
 import React, { useCallback, useState } from 'react'
-import Carousel from 'react-multi-carousel'
+import Carousel, { CarouselProps, ResponsiveType } from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { ReactComponent as LeftArrow } from 'src/assets/icons/arrow-icon.svg'
-import TierItem from './TierItem'
-import { BaseProps } from 'src/types'
 
-const responsive = {
+type Props = { responsive?: ResponsiveType } & Omit<CarouselProps, 'responsive'>
+
+const defaultResponsive = {
   desktop: {
     breakpoint: {
       max: 3000,
@@ -32,7 +32,7 @@ const responsive = {
   },
 }
 
-function TierCarousel({ className }: BaseProps) {
+function BaseCarousel({ className = '', itemClass = '', children, responsive, ...others }: Props) {
   const [carousel, setCarousel] = useState<Carousel | null>(null)
 
   const next = useCallback(() => {
@@ -52,20 +52,15 @@ function TierCarousel({ className }: BaseProps) {
   return (
     <>
       <Carousel
+        {...others}
         ref={(el) => setCarousel(el)}
         arrows={false}
         className={className}
         partialVisible
-        itemClass='px-[1px] select-none'
-        responsive={responsive}
+        itemClass={`px-[1px] select-none ${itemClass}`}
+        responsive={responsive || defaultResponsive}
       >
-        <TierItem name='Shrimp' allocation={100} poolSize={500} />
-        <TierItem name='Crab' allocation={500} poolSize={2500} />
-        <TierItem name='Octopus' allocation={1000} poolSize={5000} />
-        <TierItem name='Fish' allocation={2500} poolSize={12500} />
-        <TierItem name='Dolphin' allocation={5000} poolSize={25000} />
-        <TierItem name='Shark' allocation={10000} poolSize={50000} />
-        <TierItem name='Whale' allocation={25000} poolSize={125000} />
+        {children}
       </Carousel>
       <div className='flex justify-between mt-[50px]'>
         <LeftArrow className={'cursor-pointer'} onClick={prev} />
@@ -75,4 +70,4 @@ function TierCarousel({ className }: BaseProps) {
   )
 }
 
-export default TierCarousel
+export default BaseCarousel

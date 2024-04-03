@@ -3,7 +3,8 @@ import LogoSrc from 'src/assets/images/logo.png'
 import GradientWrraper from 'src/components/GradientWrapper'
 import BaseButton from 'src/components/buttons/BaseButton'
 import InvestorChartSrc from 'src/assets/images/investor_chart.png'
-import BlogCarousel from './components/BlogCarousel'
+import BlogCarouselItem from './components/BlogCarouselItem'
+import BaseCarousel from 'src/components/BaseCarousel'
 
 function HomePage() {
   return (
@@ -82,7 +83,18 @@ function HomePage() {
       </div>
 
       <h2 className='mt-[142px]'>Blog</h2>
-      <BlogCarousel className='mt-[100px]' />
+      <BaseCarousel className='mt-[100px]'>
+        <BlogCarouselItem />
+        <BlogCarouselItem />
+        <BlogCarouselItem />
+        <BlogCarouselItem />
+        <BlogCarouselItem />
+        <BlogCarouselItem />
+        <BlogCarouselItem />
+        <BlogCarouselItem />
+        <BlogCarouselItem />
+        <BlogCarouselItem />
+      </BaseCarousel>
     </div>
   )
 }
