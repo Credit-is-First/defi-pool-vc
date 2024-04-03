@@ -3,13 +3,20 @@ import GradientWrraper from '../GradientWrapper'
 
 interface BaseInputProps extends InputHTMLAttributes<HTMLInputElement> {
   height?: string | number
+  inputClass?: string
 }
 
-const BaseRoundedInput: React.FC<BaseInputProps> = ({ height = 47, style, className, ...rest }) => {
+const BaseRoundedInput: React.FC<BaseInputProps> = ({
+  height = 47,
+  style,
+  className,
+  inputClass,
+  ...rest
+}) => {
   return (
-    <GradientWrraper borderWidth={2} className='rounded-[10px]'>
+    <GradientWrraper borderWidth={2} className={`rounded-[10px] ${className}`}>
       <input
-        className={`border-0 outline-0 bg-transparent placeholder-gray-500 px-2 py-1 ${className}`}
+        className={`border-0 outline-0 bg-transparent placeholder-gray-500 px-2 py-1 ${inputClass}`}
         style={{
           ...style,
           height,

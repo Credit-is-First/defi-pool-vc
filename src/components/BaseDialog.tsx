@@ -29,8 +29,7 @@ function BaseDialog({ open, className, onClose, children }: BaseDialogProps) {
           alt='close icon'
           onClick={onClose}
         />
-
-        <div className='pt-0'>{children}</div>
+        {children}
       </div>
     </div>
   )
