@@ -6,7 +6,7 @@ import BlogCarouselItem from 'src/components/BlogCarouselItem'
 function BlogPage() {
   return (
     <>
-      <div className='bg-[#1c1c1e] rounded-[50px] mt-[57px] px-11 pt-[51px] pb-[157px]'>
+      <div className='bg-card rounded-[50px] mt-[57px] px-11 pt-[51px] pb-[157px]'>
         <h3 className='max-w-[650px]'>Crypto Banking: how to bank your digital coin</h3>
         <div className='mt-[20px]'>
           Crypto banking allows customers to hold and send cryptocurrecy with crypto debit cards

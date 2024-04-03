@@ -30,7 +30,7 @@ function ProjectDetailPage() {
       <h3 className='flex items-center mt-[50px]'>
         <img className='pr-1' src={patexLogoSrc} width={60} alt='patex logo' /> PATEX
       </h3>
-      <div className='rounded-[50px] overflow-hidden pb-[81px] mt-[50px] mb-[12px] bg-[#1C1C1E]'>
+      <div className='rounded-[50px] overflow-hidden pb-[81px] mt-[50px] mb-[12px] bg-card'>
         <img src={patexBannerSrc} alt='patex banner' />
         <div className='px-[40px]'>
           <h4 className='text-shadow mt-[70px]'>What is Virtual Versions (VV)?</h4>

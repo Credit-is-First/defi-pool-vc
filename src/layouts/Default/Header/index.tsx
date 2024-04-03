@@ -4,6 +4,7 @@ import ConnectWalletBtn from './components/ConnectWalletBtn'
 import Logo from 'src/assets/images/logo.png'
 import SignupDialog from 'src/pages/Signup'
 import BaseLink from 'src/components/links/BaseLink'
+import SigninDialog from 'src/pages/Signin'
 
 function Header() {
   const { hash, pathname } = useLocation()
@@ -11,7 +12,7 @@ function Header() {
 
   const handleCloseDialog = useCallback(() => {
     navigate(pathname)
-  }, [])
+  }, [pathname])
 
   return (
     <div className='header py-[24px] sticky top-0 z-10'>
@@ -50,6 +51,7 @@ function Header() {
         </div>
       </div>
       <SignupDialog open={hash === '#signup'} onClose={handleCloseDialog} />
+      <SigninDialog open={hash === '#signin'} onClose={handleCloseDialog} />
     </div>
   )
 }

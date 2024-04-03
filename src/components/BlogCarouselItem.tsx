@@ -5,7 +5,7 @@ function BlogCarouselItem() {
   return (
     <GradientWrraper
       borderWidth={1}
-      className='px-[12px] py-[30px] w-[284px] h-[273px] bg-[#1c1c1e] rounded-[11px]'
+      className='px-[12px] py-[30px] w-[284px] h-[273px] bg-card rounded-[11px]'
     >
       <nav className='mb-[45px]'>
         Introducing Vault – cryptobanking white label and API B2B solution powered by DeFi pool

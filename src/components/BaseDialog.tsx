@@ -21,7 +21,7 @@ function BaseDialog({ open, className, onClose, children }: BaseDialogProps) {
       className={`fixed z-50 inset-0 bg-black bg-opacity-90 overflow-y-auto h-full w-full px-4 ${open ? 'block' : 'hidden'}`}
     >
       <div
-        className={`relative top-40 mx-auto bg-[#111112] shadow-xl base-shadow p-[46px] ${className}`}
+        className={`relative top-[140px] mx-auto bg-mainBg shadow-xl base-shadow p-[46px] ${className}`}
       >
         <img
           className='absolute cursor-pointer w-[30px] h-[30px] top-[24px] right-[17px]'
@@ -29,8 +29,7 @@ function BaseDialog({ open, className, onClose, children }: BaseDialogProps) {
           alt='close icon'
           onClick={onClose}
         />
-
-        <div className='pt-0'>{children}</div>
+        {children}
       </div>
     </div>
   )

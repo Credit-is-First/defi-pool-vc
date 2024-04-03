@@ -18,7 +18,7 @@ function InvestDialog({ className, open = false, onClose, ...others }: Props) {
       <h4 className='ml-[17px] mr-[43px]'>
         Specify the amount in USDT you want to invest in this project
       </h4>
-      <div className='rounded-[50px] bg-[#1c1c1e] p-11 flex justify-between mt-[15px]'>
+      <div className='rounded-[50px] bg-card p-11 flex justify-between mt-[15px]'>
         <div>
           <div className='text-md text-[#5A5A5A]'>Enter the amount $</div>
           <BaseInput type='text' placeholder='1000' inputMode='numeric' className='h-[42px]' />
