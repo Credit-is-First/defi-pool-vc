@@ -10,7 +10,7 @@ type Props = {
 
 function MarketplaceListItem({ type, onClick }: Props) {
   return (
-    <div className='min-w-[358px] h-[412px] p-[26px] rounded-[30px] bg-card text-2xs text-subtitle2'>
+    <div className='max-w-[358px] h-[412px] p-[26px] rounded-[30px] bg-card text-2xs text-subtitle2 m-auto'>
       <img className='rounded-[25px]' src={patexSrc} alt='patex' />
       <div className='flex flex-col items-center'>
         <div className='mt-[26px] text-2xs font-medium gradient-text uppercase'>

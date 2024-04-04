@@ -12,12 +12,12 @@ interface Props extends BaseDialogProps {
 function BuySellDialog({ type, className, ...others }: Props) {
   return (
     <BaseDialog
-      className={`w-[1000px] h-[736px] rounded-[50px] bg-mainBg ${className}`}
+      className={`max-w-[1000px] h-[736px] rounded-[50px] bg-mainBg ${className}`}
       {...others}
     >
       <h4 className='uppercase ml-[17px]'>{type}</h4>
-      <div className='mt-[67px] bg-card pl-[54px] py-[82.5px] rounded-[50px]'>
-        <div className='w-[630px] text-sm text-disactive'>
+      <div className='mt-[67px] bg-card px-4 sm:px-6 lg:px-[54px] py-[82.5px] rounded-[50px]'>
+        <div className='max-w-[630px] text-sm text-disactive'>
           <BaseRoundedInput
             className='col-span-2 text-title'
             inputClass='px-[30px] text-sm'
