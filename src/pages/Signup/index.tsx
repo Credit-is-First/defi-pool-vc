@@ -6,10 +6,10 @@ import BaseLink from 'src/components/links/BaseLink'
 
 function SignupDialog({ className, ...others }: BaseDialogProps) {
   return (
-    <BaseDialog className={`w-[1000px] rounded-[50px] ${className}`} {...others}>
+    <BaseDialog className={`max-w-[1000px] rounded-[50px] ${className}`} {...others}>
       <h4 className='mx-[17px]'>Create a new account</h4>
-      <div className='mt-[67px] rounded-[50px] bg-card py-[46px] pl-[54px]'>
-        <div className='grid grid-cols-2 gap-[30px] w-[630px]'>
+      <div className='mt-[67px] rounded-[50px] bg-card py-[46px] px-4 sm:px-6 lg:px-[54px]'>
+        <div className='grid grid-cols-2 gap-[30px] max-w-[630px]'>
           <BaseRoundedInput
             className='col-span-1'
             inputClass='px-[30px] text-sm'
@@ -36,7 +36,7 @@ function SignupDialog({ className, ...others }: BaseDialogProps) {
             placeholder='Repeat password'
           />
         </div>
-        <BaseButton className='w-[186px] h-[53px] mt-[40px] text-[16px] font-bold'>
+        <BaseButton className='w-[186px] h-[53px] mt-[40px] text-[16px] font-bold mx-auto sm:mx-0'>
           Create Account
         </BaseButton>
         <div className='text-sm mt-[40px] text-disactive mb-[20px]'>
