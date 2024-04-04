@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <div className='header py-[24px] sticky top-0 z-10'>
-      <div className='container m-auto max-w-[1241px] flex items-center p-4 md:p-6 lg:p-10'>
+      <div className='container m-auto max-w-[1241px] flex items-center p-4 md:p-6 lg:p-10 xl:p-0'>
         <div className='w-[55px] h-[55px]'>
           <img src={Logo} alt='logo' />
         </div>

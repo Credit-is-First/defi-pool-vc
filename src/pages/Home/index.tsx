@@ -9,7 +9,7 @@ import BaseLinkButton from 'src/components/buttons/BaseLinkButton'
 function HomePage() {
   return (
     <div className='pb-[66px]'>
-      <div className='flex flex-col lg:flex-rowjustify-between items-center'>
+      <div className='flex flex-col lg:flex-row justify-between items-center'>
         <div className='max-w-[568px]'>
           <h2 className='text-center lg:text-left'>
             Invest in the best global early-stage project
