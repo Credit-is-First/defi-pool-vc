@@ -16,8 +16,8 @@ function AmbassadorProgramPage() {
 
   return (
     <div className='flex justify-between items-center mb-[150px]'>
-      <div className='w-[729px]'>
-        <h3 className='mt-[67px]'>DeFi Pool ambassador program</h3>
+      <div className='max-w-[729px] m-auto'>
+        <h3 className='mt-[67px] text-center xs:text-left'>DeFi Pool ambassador program</h3>
         <div className='mt-[20px]'>Join the Ambassador program and earn rewards</div>
         <div className='mt-[50px]'>Ambassador rewards</div>
         <div className='mt-[20px]'>
@@ -34,11 +34,13 @@ function AmbassadorProgramPage() {
           To become a DeFi Pool Ambassador, please fill out an application, and we will review it
           within 72 hours!
         </div>
-        <BaseButton className='w-[186px] h-[53px] mt-[90px]' onClick={openPopup}>
-          Start
-        </BaseButton>
+        <div className='mt-[90px]'>
+          <BaseButton className='w-[186px] h-[53px] m-auto xs:mx-0' onClick={openPopup}>
+            Start
+          </BaseButton>
+        </div>
       </div>
-      <div>
+      <div className='hidden lg:block ml-10'>
         <RightImage />
       </div>
 
