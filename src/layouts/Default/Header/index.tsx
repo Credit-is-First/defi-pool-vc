@@ -42,7 +42,7 @@ function Header() {
           <BaseLink to={'/ambassador-program'}>
             <nav className='px-1'>Ambassador program</nav>
           </BaseLink>
-          <BaseLink to={'/'}>
+          <BaseLink to={'/marketplace'}>
             <nav className='px-1'>Marketplace</nav>
           </BaseLink>
         </div>
