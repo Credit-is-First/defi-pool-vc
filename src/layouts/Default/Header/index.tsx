@@ -16,11 +16,11 @@ function Header() {
 
   return (
     <div className='header py-[24px] sticky top-0 z-10'>
-      <div className='container m-auto max-w-[1241px] flex items-center'>
+      <div className='container m-auto max-w-[1241px] flex items-center p-4 md:p-6 lg:p-10'>
         <div className='w-[55px] h-[55px]'>
           <img src={Logo} alt='logo' />
         </div>
-        <div className='flex-1 px-[34px] flex justify-evenly items-center'>
+        <div className='hidden flex-1 px-[34px] lg:flex justify-evenly items-center'>
           <BaseLink to={'/'}>
             <nav className='px-1'>Home</nav>
           </BaseLink>
