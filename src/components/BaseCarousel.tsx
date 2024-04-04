@@ -6,19 +6,18 @@ import { ReactComponent as LeftArrow } from 'src/assets/icons/arrow-icon.svg'
 type Props = { responsive?: ResponsiveType } & Omit<CarouselProps, 'responsive'>
 
 const defaultResponsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-    partialVisibilityGutter: 0,
-  },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1280 },
     items: 4,
     partialVisibilityGutter: 0,
   },
+  labtop: {
+    breakpoint: { max: 1280, min: 960 },
+    items: 3,
+    partialVisibilityGutter: 0,
+  },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 960, min: 464 },
     items: 2,
     partialVisibilityGutter: 0,
   },
