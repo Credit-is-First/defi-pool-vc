@@ -1,21 +1,35 @@
-import React from 'react'
+import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
 import GradientWrraper from '../GradientWrapper'
-import { BaseProps } from 'src/types'
 
 export type BaseButtonProps = {
   hideBorder?: boolean
-} & BaseProps
+  name?: string
+  uppercase?: boolean
+  borderWidth?: number
+} & DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
-function BaseButton({ className, hideBorder, children, ...others }: BaseButtonProps) {
+function BaseButton({
+  className,
+  hideBorder,
+  children,
+  borderWidth = 3,
+  uppercase = true,
+  name,
+  ...others
+}: BaseButtonProps) {
   return (
     <GradientWrraper
+      borderWidth={borderWidth}
       hideBorder={hideBorder}
-      className={
-        'cursor-pointer hover rounded-[200px] flex items-center justify-center ' + className
-      }
-      {...others}
+      className={'cursor-pointer hover rounded-[200px] ' + className}
     >
-      <div className='gradient-text flex items-center justify-center uppercase'>{children}</div>
+      <button
+        name={name}
+        className={`gradient-text flex items-center justify-center ${uppercase ? 'uppercase' : ''} w-full h-full`}
+        {...others}
+      >
+        {children}
+      </button>
     </GradientWrraper>
   )
 }

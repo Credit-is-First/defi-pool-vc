@@ -10,6 +10,7 @@ import ProjectsPage from './pages/Projects'
 import ProjectDetailPage from './pages/Projects/Detail'
 import BlogPage from './pages/Blog'
 import AmbassadorProgramPage from './pages/AmbassadorProgram'
+import MarketplacePage from './pages/Marketplace'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/project/:id' element={<ProjectDetailPage />} />
         <Route path='/blog-article' element={<BlogPage />} />
         <Route path='/ambassador-program' element={<AmbassadorProgramPage />} />
+        <Route path='/marketplace' element={<MarketplacePage />} />
       </Route>
     </Routes>
   )
