@@ -39,7 +39,7 @@ function Header() {
           <BaseLink to={'/account'}>
             <nav className='px-1'>Account</nav>
           </BaseLink>
-          <BaseLink to={'/'}>
+          <BaseLink to={'/ambassador-program'}>
             <nav className='px-1'>Ambassador program</nav>
           </BaseLink>
           <BaseLink to={'/'}>
