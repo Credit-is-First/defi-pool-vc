@@ -10,6 +10,7 @@ module.exports = {
         accent: '#02cfff',
         title: '#ffffff',
         subtitle: '#575757',
+        subtitle2: '#e3dede',
         desc: '#9e9e9e',
         disactive: '#5a5a5a',
         danger: '#bc0000',
@@ -76,6 +77,11 @@ module.exports = {
         '.ul-text': {
           fontSize: theme('fontSize.2xl'),
           fontWeight: theme('fontWeight.bold'),
+        },
+        span: {
+          color: 'inherit',
+          fontSize: 'inherit',
+          fontWeight: 'inherit',
         },
       })
     }),
