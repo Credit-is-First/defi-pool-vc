@@ -7,10 +7,10 @@ import BaseLink from 'src/components/links/BaseLink'
 
 function SigninDialog({ className, ...others }: BaseDialogProps) {
   return (
-    <BaseDialog className={`w-[1000px] rounded-[50px] pt-[39px] ${className}`} {...others}>
+    <BaseDialog className={`max-w-[1000px] rounded-[50px] pt-[39px] ${className}`} {...others}>
       <h4 className='mx-[17px]'>Log in</h4>
-      <div className='mt-[67px] rounded-[50px] bg-card py-[94.5px] pl-[54px]'>
-        <div className='grid grid-cols-2 gap-[30px] w-[630px]'>
+      <div className='mt-[67px] rounded-[50px] bg-card py-[94.5px] px-4 sm:px-6 lg:px-[54px]'>
+        <div className='grid grid-cols-2 gap-[30px] max-w-[630px]'>
           <BaseRoundedInput
             className='col-span-2'
             inputClass='px-[30px] text-sm'
@@ -23,7 +23,7 @@ function SigninDialog({ className, ...others }: BaseDialogProps) {
           />
         </div>
         <BaseCheckbox label='Remember me' className='text-disactive text-sm mt-[20px]' />
-        <BaseButton className='w-[186px] h-[53px] mt-[40px]'>Log in</BaseButton>
+        <BaseButton className='w-[186px] h-[53px] mt-[40px] m-auto sm:mx-0'>Log in</BaseButton>
         <div className='text-sm text-disactive mt-[40px]'>
           <BaseLink to='#forget-password'>Forgot your password?</BaseLink> · Need to confirm your
           email?
