@@ -9,6 +9,7 @@ import TierPage from './pages/Tier'
 import ProjectsPage from './pages/Projects'
 import ProjectDetailPage from './pages/Projects/Detail'
 import BlogPage from './pages/Blog'
+import AmbassadorProgramPage from './pages/AmbassadorProgram'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/projects' element={<ProjectsPage />} />
         <Route path='/project/:id' element={<ProjectDetailPage />} />
         <Route path='/blog-article' element={<BlogPage />} />
+        <Route path='/ambassador-program' element={<AmbassadorProgramPage />} />
       </Route>
     </Routes>
   )
