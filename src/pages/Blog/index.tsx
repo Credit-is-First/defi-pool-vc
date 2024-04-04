@@ -7,12 +7,14 @@ function BlogPage() {
   return (
     <>
       <div className='bg-card rounded-[50px] mt-[57px] px-11 pt-[51px] pb-[157px]'>
-        <h3 className='max-w-[650px]'>Crypto Banking: how to bank your digital coin</h3>
+        <h3 className='max-w-[650px] text-center sm:text-left'>
+          Crypto Banking: how to bank your digital coin
+        </h3>
         <div className='mt-[20px]'>
           Crypto banking allows customers to hold and send cryptocurrecy with crypto debit cards
         </div>
         <img className='rounded-[30px] mt-[90px]' src={blogBankSrc} alt='blog bank' />
-        <h4 className='mt-[70px]'>Summary: crypto banking</h4>
+        <h4 className='mt-[70px] text-center sm:text-left'>Summary: crypto banking</h4>
         <div className='grid grid-flow-row gap-[20px] mt-[50px]'>
           <span>
             Cryptocurrency banking — or crypto banking — is a relatively new financial product that
@@ -40,7 +42,7 @@ function BlogPage() {
             well as their benefits and barriers.
           </span>
         </div>
-        <h4 className='mt-[112px]'>What is crypto banking?</h4>
+        <h4 className='mt-[112px] text-center sm:text-left'>What is crypto banking?</h4>
         <div className='mt-[50px]'>
           The term crypto banking could be considered a misnomer, since the exchange companies and
           firms that offer these services aren&apos;t technically banks, but it generally refers to
@@ -48,7 +50,7 @@ function BlogPage() {
           kind of banking mostly just allows people to hold their funds in a digital wallet or spend
           it like they would spend traditional money.
         </div>
-        <h4 className='mt-[91px]'>Benefits of crypto banking</h4>
+        <h4 className='mt-[91px] text-center sm:text-left'>Benefits of crypto banking</h4>
         <div className='mt-[50px]'>
           At this time, the main benefit of this kind of banking is cryptocurrency debit cards. They
           allow you to use your digital coin balance like any other currency to make everyday
@@ -64,7 +66,7 @@ function BlogPage() {
           many regular debit cards are.
         </div>
       </div>
-      <h4 className='text-shadow mt-[96px]'>You can also like</h4>
+      <h4 className='text-shadow mt-[96px] text-center sm:text-left'>You can also like</h4>
       <BaseCarousel className='mt-[70px] mb-[52px]'>
         <BlogCarouselItem />
         <BlogCarouselItem />
