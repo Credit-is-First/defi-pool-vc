@@ -7,27 +7,27 @@ import BaseLink from 'src/components/links/BaseLink'
 
 function AmbassadorProgramPopup({ className, ...others }: BaseDialogProps) {
   return (
-    <BaseDialog className={`max-w-[1000px] ${className}`} {...others}>
+    <BaseDialog className={`max-w-[1000px] rounded-[50px] ${className}`} {...others}>
       <h4 className='ml-[17px]'>Ambassador program</h4>
-      <div className='mt-[67px] pt-[56px] pl-[53px] pb-[45px] rounded-[50px] bg-card'>
-        <div className='grid grid-flow-row gap-[20px] w-[630px]'>
-          <div className='grid grid-flow-col gap-[30px]'>
+      <div className='mt-[67px] pt-[56px] px-4 sm:px-6 lg:px-[54px] pb-[45px] rounded-[50px] bg-card'>
+        <div className='grid grid-flow-row gap-[20px] max-w-[630px]'>
+          <div className='grid grid-cols-1 xs:grid-cols-2 gap-[20px] xs:gap-[30px]'>
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='First name' />
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='Email' />
           </div>
-          <div className='grid grid-flow-col gap-[30px]'>
+          <div className='grid grid-cols-1 xs:grid-cols-2 gap-[20px] xs:gap-[30px]'>
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='Last name' />
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='Country / city' />
           </div>
-          <div className='grid grid-flow-col gap-[30px]'>
+          <div className='grid grid-cols-1 xs:grid-cols-2 gap-[20px] xs:gap-[30px]'>
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='Twitter' />
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='Telegram' />
           </div>
-          <div className='grid grid-flow-col gap-[30px]'>
+          <div className='grid grid-cols-1 xs:grid-cols-2 gap-[20px] xs:gap-[30px]'>
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='Discord' />
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='Instagram' />
           </div>
-          <div className='grid grid-flow-col gap-[30px]'>
+          <div className='grid grid-cols-1 xs:grid-cols-2 gap-[20px] xs:gap-[30px]'>
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='Tik tok' />
             <BaseRoundedInput inputClass='px-[30px] text-sm' placeholder='Youtube' />
           </div>
