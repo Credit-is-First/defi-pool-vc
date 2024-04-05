@@ -1,10 +1,11 @@
 import React from 'react'
 import Logo from 'src/assets/images/logo.png'
 import Socials from 'src/components/Socials'
+import { BaseProps } from 'src/types'
 
-function Footer() {
+function Footer({ className }: BaseProps) {
   return (
-    <div className='flex flex-col-reverse xs:flex-row items-center justify-between'>
+    <div className={`flex flex-col-reverse xs:flex-row items-center justify-between ${className}`}>
       <div className='py-5 text-center xs:text-left'>
         <div className='w-[55px] h-[55px] inline-block'>
           <img src={Logo} alt='logo' />

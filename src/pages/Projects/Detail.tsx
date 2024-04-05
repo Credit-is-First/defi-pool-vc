@@ -27,7 +27,7 @@ function ProjectDetailPage() {
 
   return (
     <>
-      <h3 className='flex items-center mt-[50px] mx-auto sm:mx-0'>
+      <h3 className='flex items-center mt-[50px] justify-center sm:justify-start'>
         <img className='pr-1' src={patexLogoSrc} width={60} alt='patex logo' /> PATEX
       </h3>
       <div className='rounded-[50px] overflow-hidden pb-[81px] mt-[50px] mb-[12px] bg-card'>
