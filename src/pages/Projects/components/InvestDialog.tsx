@@ -10,7 +10,7 @@ type Props = BaseDialogProps
 function InvestDialog({ className, open = false, onClose, ...others }: Props) {
   return (
     <BaseDialog
-      className={`w-[1000px] h-[648px] rounded-[50px] ${className}`}
+      className={`max-w-[1000px] rounded-[50px] ${className}`}
       open={open}
       onClose={onClose}
       {...others}
@@ -18,10 +18,15 @@ function InvestDialog({ className, open = false, onClose, ...others }: Props) {
       <h4 className='ml-[17px] mr-[43px]'>
         Specify the amount in USDT you want to invest in this project
       </h4>
-      <div className='rounded-[50px] bg-card p-11 flex justify-between mt-[15px]'>
-        <div>
+      <div className='rounded-[50px] bg-card p-11 flex flex-col lg:flex-row justify-between mt-[15px]'>
+        <div className='w-full lg:w-[328px]'>
           <div className='text-md text-[#5A5A5A]'>Enter the amount $</div>
-          <BaseInput type='text' placeholder='1000' inputMode='numeric' className='h-[42px]' />
+          <BaseInput
+            type='text'
+            placeholder='1000'
+            inputMode='numeric'
+            className='h-[42px] min-w-0 w-full'
+          />
           <div className='flex text-md text-[#5A5A5A] mt-[12px]'>
             <img className='mr-[10x]' src={infoIconSrc} alt='info icon' />
             <span>
@@ -31,10 +36,10 @@ function InvestDialog({ className, open = false, onClose, ...others }: Props) {
             </span>
           </div>
           <div className='text-right text-sm mt-[145px]'>50%</div>
-          <BaseSlider value={50} className='h-[22px] w-[328px] mt-[10px]' />
+          <BaseSlider value={50} className='h-[22px] mt-[10px]' />
           <div className='text-[#5A5A5A] mt-[33px]'>Allocation 250K</div>
         </div>
-        <div className='w-[328px]'>
+        <div className='w-full lg:w-[328px]'>
           <nav className='mt-[18px]'>$1000 000</nav>
           <div className='text-sm gradient-text mt-[5px]'>
             Allocation according to your tier Octopus

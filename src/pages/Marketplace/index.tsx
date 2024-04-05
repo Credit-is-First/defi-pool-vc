@@ -42,9 +42,9 @@ function MarketplacePage() {
 
       <ScrollView
         className='mt-[70px] h-[724px]'
-        contentClass='overflow-y-auto pr-[57px] py-[17px] px-1'
+        contentClass='overflow-y-auto pr-[10px] lg:pr-[57px] py-[17px] px-1'
       >
-        <div className='grid grid-cols-3 gap-[50px]'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[50px] place-content-center'>
           <MarketplaceListItem type={type} onClick={openDialog} />
           <MarketplaceListItem type={type} onClick={openDialog} />
           <MarketplaceListItem type={type} onClick={openDialog} />

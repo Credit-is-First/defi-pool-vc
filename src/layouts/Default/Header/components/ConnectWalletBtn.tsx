@@ -1,10 +1,11 @@
 import React from 'react'
 import { ReactComponent as WalletIcon } from 'src/assets/icons/wallet-icon.svg'
 import BaseButton from 'src/components/buttons/BaseButton'
+import { BaseProps } from 'src/types'
 
-function ConnectWalletBtn() {
+function ConnectWalletBtn({ className }: BaseProps) {
   return (
-    <BaseButton className='py-[10px] px-[45px] flex items-center'>
+    <BaseButton className={`text-sm ${className}`}>
       <div className='pr-[10px]'>
         <WalletIcon />
       </div>

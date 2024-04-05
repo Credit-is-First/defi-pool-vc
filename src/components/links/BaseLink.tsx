@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link, LinkProps } from 'react-router-dom'
+import { Link, LinkProps, useLocation } from 'react-router-dom'
 
 type Props = { underline?: boolean; external?: boolean; to: string } & Omit<LinkProps, 'to'>
 
 function BaseLink({ to, className, underline, children, external, ...others }: Props) {
+  const { pathname } = useLocation()
+
   if (external) {
     return (
       <a
@@ -11,6 +13,7 @@ function BaseLink({ to, className, underline, children, external, ...others }: P
         target='_blank'
         rel='noreferrer'
         className={`hover:text-accent ${underline ? 'underline' : ''} ${className}`}
+        {...others}
       >
         {children}
       </a>
@@ -20,7 +23,7 @@ function BaseLink({ to, className, underline, children, external, ...others }: P
   return (
     <Link
       to={to}
-      className={`hover:text-accent ${underline ? 'underline' : ''} ${className}`}
+      className={`hover:text-accent ${pathname === to ? 'text-accent' : ''} ${underline ? 'underline' : ''} ${className}`}
       {...others}
     >
       {children}

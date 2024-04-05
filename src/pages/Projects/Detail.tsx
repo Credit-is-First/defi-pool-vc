@@ -27,12 +27,12 @@ function ProjectDetailPage() {
 
   return (
     <>
-      <h3 className='flex items-center mt-[50px]'>
+      <h3 className='flex items-center mt-[50px] justify-center sm:justify-start'>
         <img className='pr-1' src={patexLogoSrc} width={60} alt='patex logo' /> PATEX
       </h3>
       <div className='rounded-[50px] overflow-hidden pb-[81px] mt-[50px] mb-[12px] bg-card'>
         <img src={patexBannerSrc} alt='patex banner' />
-        <div className='px-[40px]'>
+        <div className='px-[20px] md:px-[40px]'>
           <h4 className='text-shadow mt-[70px]'>What is Virtual Versions (VV)?</h4>
           <div className='mt-[30px]'>
             VV is the first social media platform to use 3D biometrically backed AI avatars to
@@ -145,9 +145,9 @@ function ProjectDetailPage() {
             actively participate in shaping their digital identity experience.
           </div>
           <h4 className='text-shadow mt-[70px]'>Tokenomics</h4>
-          <div className='flex items-center mt-[30px]'>
+          <div className='flex items-center mt-[30px] max-w-[400px] justify-between'>
             <img width={222} height={224} src={tokenomicsChartSrc} alt='tokenomics chart' />
-            <div className='grid gap-[5px] ml-[30px]'>
+            <div className='grid gap-[5px]'>
               <LiItem
                 className='text-sm font-inter'
                 dotColor='bg-[#ffffff]'

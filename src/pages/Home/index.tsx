@@ -8,11 +8,13 @@ import BaseLinkButton from 'src/components/buttons/BaseLinkButton'
 
 function HomePage() {
   return (
-    <div>
-      <div className='flex justify-between items-center'>
+    <div className='pb-[66px]'>
+      <div className='flex flex-col lg:flex-row justify-between items-center'>
         <div className='max-w-[568px]'>
-          <h2>Invest in the best global early-stage project</h2>
-          <div className='flex mt-[78px]'>
+          <h2 className='text-center lg:text-left'>
+            Invest in the best global early-stage project
+          </h2>
+          <div className='flex justify-center lg:justify-start mt-[78px]'>
             <BaseLinkButton to='#signup' className='h-[44px] px-0 w-[143px] text-[15px] mr-[30px]'>
               SIGN UP
             </BaseLinkButton>
@@ -24,17 +26,17 @@ function HomePage() {
         <img src={LogoSrc} alt='logo image' />
       </div>
 
-      <h3 className='mt-[120px]'>
+      <h3 className='mt-[120px] text-center lg:text-left'>
         <span className='text-accent'>DeFi pool</span> - decentralize venture fund in web 3, which,
         thanks to smart contracts, unites a large number of private investors for joint investments
         at an early stage
       </h3>
 
-      <h2 className='mt-[137px]'>
+      <h2 className='mt-[137px] text-center lg:text-left'>
         Just <span className='text-accent'>4</span> steps to start investing
       </h2>
 
-      <div className='grid grid-cols-4 gap-[15px] mt-[100px]'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[15px] mt-[100px]'>
         <GradientWrraper
           borderWidth={1}
           className='bg-card flex items-center rounded-[30px] py-[33px]'
@@ -76,9 +78,11 @@ function HomePage() {
         </BaseLinkButton>
       </div>
 
-      <h2 className='mt-[150px]'>Convenient functionality for investors</h2>
-      <div className='mt-[100px] flex items-center justify-between'>
-        <div className='primary-ul grid grid-rows-3 gap-[30px]'>
+      <h2 className='mt-[150px] text-center lg:text-left'>
+        Convenient functionality for investors
+      </h2>
+      <div className='mt-[100px] flex flex-col-reverse lg:flex-row items-center justify-between'>
+        <div className='primary-ul grid grid-rows-3 gap-[30px] mt-[70px] lg:mt-0'>
           <h5>Total portfolio ROI</h5>
           <h5>ROI for each project</h5>
           <h5>Unblock schedule</h5>
@@ -88,7 +92,7 @@ function HomePage() {
         </div>
       </div>
 
-      <h2 className='mt-[142px]'>Blog</h2>
+      <h2 className='mt-[142px] text-center lg:text-left'>Blog</h2>
       <BaseCarousel className='mt-[100px]'>
         <BlogCarouselItem />
         <BlogCarouselItem />

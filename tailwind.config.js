@@ -1,11 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 
 const plugin = require('tailwindcss/plugin')
+const screens = require('./src/screens')
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      height: {
+        header: '70px',
+        'header-lg': '103px',
+        footer: '291px',
+        content: 'calc(100vh - 70px - 291px)',
+        'content-lg': 'calc(100vh - 103px - 291px)',
+      },
       colors: {
         accent: '#02cfff',
         title: '#ffffff',
@@ -30,6 +38,10 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter'],
+      },
+      screens,
+      boxShadow: {
+        dialog: '7px 7px 250px 0px #00c2ff29',
       },
     },
   },
